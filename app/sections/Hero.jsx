@@ -30,7 +30,7 @@ const Hero = () => {
           </span>
           {hero_data.name}
         </p>
-        <h1 className="font-bold text-3xl md:text-5xl lg:text-6xl">
+        <h1 className="font-bold text-2xl md:text-5xl lg:text-6xl">
           {hero_data.subheading}{" "}
           <span className="text-green-400 py-4">Frontend Developer</span>
         </h1>

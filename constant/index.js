@@ -1,6 +1,20 @@
 import { FaFacebook } from "react-icons/fa";
 import { FiTwitter, FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
+import Image from "next/image";
+import HTML from "../public/htmlicon.png";
+import CSS from "../public/css.png";
+import Javascript from "../public/js.png";
+import Tailwind from "../public/tailwind.png";
+import Vite from "../public/vite.png";
+import ReactJS from "../public/react.png";
+import Nodejs from "../public/node js.png";
+import Mongodb from "../public/mongo db.png";
+import Git from "../public/git.png";
+import VsCode from "../public/vs code.png";
+import Figma from "../public/figma.png";
+import Express from "../public/express.png";
+import Next from "../public/next.png";
 
 // Navlinks
 export const nav_links = [
@@ -75,4 +89,62 @@ export const about = {
     title: "Bachelor of Science in Computer Science",
     school: "Don Mariano Marcos Memorial State University",
   },
+};
+
+export const skills = {
+  front_end: [
+    {
+      name: "HTML",
+      logo: HTML,
+    },
+    {
+      name: "CSS",
+      logo: CSS,
+    },
+    {
+      name: "Javascript",
+      logo: Javascript,
+    },
+    {
+      name: "React",
+      logo: ReactJS,
+    },
+    {
+      name: "Next Js",
+      logo: Next,
+    },
+    {
+      name: "Tailwind",
+      logo: Tailwind,
+    },
+  ],
+
+  backend: [
+    {
+      name: "Node Js",
+      logo: Nodejs,
+    },
+    {
+      name: "Express ",
+      logo: Express,
+    },
+    {
+      name: "Mongo DB",
+      logo: Mongodb,
+    },
+  ],
+  others: [
+    {
+      name: "Git",
+      logo: Git,
+    },
+    {
+      name: "Vs Code",
+      logo: VsCode,
+    },
+    {
+      name: "Figma",
+      logo: Figma,
+    },
+  ],
 };
