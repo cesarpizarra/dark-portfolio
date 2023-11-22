@@ -40,9 +40,9 @@ const Hero = () => {
           {socials.map((social, i) => (
             <div
               key={i}
-              className="shadow-lg shadow-[#00473e] rounded-full p-2 md:p-4 hover:scale-125 transition duration-300 cursor-pointer"
+              className="shadow-lg shadow-[#00473e] rounded-full p-2 md:p-4 hover:translate-y-[-10px] duration-300 cursor-pointer "
             >
-              {social.icon}
+              <a href={social.url}> {social.icon}</a>
             </div>
           ))}
         </div>

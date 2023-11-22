@@ -51,22 +51,22 @@ export const socials = [
   {
     name: "github",
     icon: <FiGithub size={25} />,
-    url: "",
+    url: "https://github.com/cesarpizarra",
   },
   {
     name: "facebook",
     icon: <FaFacebook size={25} />,
-    url: "",
+    url: "https://web.facebook.com/cesar.pizarra.1/",
   },
   {
     name: "linkedin",
     icon: <CiLinkedin size={25} />,
-    url: "",
+    url: "https://www.linkedin.com/in/cesar-pizarra-610336258/",
   },
   {
     name: "twitter",
     icon: <FiTwitter size={25} />,
-    url: "",
+    url: "https://twitter.com/CesarPizarra3",
   },
 ];
 
@@ -91,60 +91,53 @@ export const about = {
   },
 };
 
-export const skills = {
-  front_end: [
-    {
-      name: "HTML",
-      logo: HTML,
-    },
-    {
-      name: "CSS",
-      logo: CSS,
-    },
-    {
-      name: "Javascript",
-      logo: Javascript,
-    },
-    {
-      name: "React",
-      logo: ReactJS,
-    },
-    {
-      name: "Next Js",
-      logo: Next,
-    },
-    {
-      name: "Tailwind",
-      logo: Tailwind,
-    },
-  ],
-
-  backend: [
-    {
-      name: "Node Js",
-      logo: Nodejs,
-    },
-    {
-      name: "Express ",
-      logo: Express,
-    },
-    {
-      name: "Mongo DB",
-      logo: Mongodb,
-    },
-  ],
-  others: [
-    {
-      name: "Git",
-      logo: Git,
-    },
-    {
-      name: "Vs Code",
-      logo: VsCode,
-    },
-    {
-      name: "Figma",
-      logo: Figma,
-    },
-  ],
-};
+export const skills = [
+  {
+    name: "HTML",
+    logo: HTML,
+  },
+  {
+    name: "CSS",
+    logo: CSS,
+  },
+  {
+    name: "Javascript",
+    logo: Javascript,
+  },
+  {
+    name: "React",
+    logo: ReactJS,
+  },
+  {
+    name: "Next Js",
+    logo: Next,
+  },
+  {
+    name: "Tailwind",
+    logo: Tailwind,
+  },
+  {
+    name: "Node Js",
+    logo: Nodejs,
+  },
+  {
+    name: "Express ",
+    logo: Express,
+  },
+  {
+    name: "Mongo DB",
+    logo: Mongodb,
+  },
+  {
+    name: "Git",
+    logo: Git,
+  },
+  {
+    name: "Vs Code",
+    logo: VsCode,
+  },
+  {
+    name: "Figma",
+    logo: Figma,
+  },
+];
