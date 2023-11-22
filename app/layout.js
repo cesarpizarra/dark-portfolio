@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "../styles/globals.css";
-import Head from "next/head";
 
 const poppins = Poppins({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -15,9 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/cezaru.png" sizes="any" type="image/png" />
-      </Head>
+      <link
+        rel="shortcut icon"
+        href="/cezaru.png"
+        sizes="50x50"
+        type="image/png"
+      />
       <body className={poppins.className}>{children}</body>
     </html>
   );

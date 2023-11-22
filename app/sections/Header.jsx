@@ -5,7 +5,7 @@ import { LuMoonStar } from "react-icons/lu";
 import { MdLightMode } from "react-icons/md";
 import Link from "next/link";
 const Header = () => {
-  const [nav, setNav] = useState(false);
+  const [toggleMode, setToggleMode] = useState(false);
   const [header, setHeader] = useState(false);
 
   const scrollHeader = () => {
@@ -22,8 +22,8 @@ const Header = () => {
       window.removeEventListener("scroll", scrollHeader);
     };
   }, []);
-  const handleNav = () => {
-    setNav(!nav);
+  const handleToggle = () => {
+    setToggleMode(!toggleMode);
   };
   return (
     <header
@@ -41,10 +41,10 @@ const Header = () => {
           </Link>
         ))}
         <div
-          onClick={handleNav}
+          onClick={handleToggle}
           className="text-2xl md:text-3xl cursor-pointer"
         >
-          {!nav ? <LuMoonStar /> : <MdLightMode />}
+          {!toggleMode ? <LuMoonStar /> : <MdLightMode />}
         </div>
       </ul>
     </header>
