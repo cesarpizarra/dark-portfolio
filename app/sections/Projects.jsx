@@ -29,7 +29,7 @@ const Projects = () => {
                   project.tools.map((tool, i) => (
                     <span
                       key={i}
-                      className="bg-[#bccbc9] px-4 py-1 rounded-full lowercase"
+                      className="bg-[#c6d2d1] px-4 text-sm py-1 rounded-full lowercase"
                     >
                       {tool}
                     </span>
@@ -38,13 +38,13 @@ const Projects = () => {
               <div className="pt-8 flex items-center gap-5">
                 <a
                   href={project.urL}
-                  className="bg-green-400 px-5 py-2 rounded-md text-white"
+                  className="bg-green-500 px-5 py-2 rounded-md text-white hover:translate-y-[-10px] duration-300"
                 >
                   take a look
                 </a>
                 <a
                   href={project.code}
-                  className="shadow-lg shadow-[#00473e] rounded-full p-2 md:p-4 hover:translate-y-[-10px] duration-300 cursor-pointer "
+                  className="shadow-lg shadow-[#00331ab9] rounded-full p-2 md:p-4 hover:translate-y-[-10px] duration-300 cursor-pointer "
                 >
                   {project.icon}
                 </a>

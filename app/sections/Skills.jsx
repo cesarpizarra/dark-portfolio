@@ -10,7 +10,7 @@ const Skills = () => {
         {skills.map((skill, i) => (
           <div
             key={i}
-            className="shadow shadow-[#00473e] p-4 rounded-md flex items-center gap-4 hover:translate-y-[-5px] duration-300 hover:shadow-lg"
+            className="shadow-xl  p-4 rounded-md flex items-center gap-4 hover:translate-y-[-5px] duration-300"
           >
             <Image src={skill.logo} alt={skill.name} width={35} height={35} />
             <p>{skill.name}</p>
