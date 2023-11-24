@@ -15,6 +15,8 @@ import VsCode from "../public/vs code.png";
 import Figma from "../public/figma.png";
 import Express from "../public/express.png";
 import Next from "../public/next.png";
+import FreeCode from "../public/free_code.png";
+import BookmarkLandingPage from "../public/bookmark-landing-page.png";
 
 // Navlinks
 export const nav_links = [
@@ -91,6 +93,20 @@ export const about = {
   },
 };
 
+export const certificates = [
+  {
+    title: "Free Code Camp",
+    img: FreeCode,
+  },
+  {
+    title: "Free Code Camp",
+    img: FreeCode,
+  },
+  {
+    title: "Free Code Camp",
+    img: FreeCode,
+  },
+];
 export const skills = [
   {
     name: "HTML",
@@ -139,5 +155,37 @@ export const skills = [
   {
     name: "Figma",
     logo: Figma,
+  },
+];
+export const projects = [
+  {
+    title: "Bookmark Landing Page",
+    description:
+      "A Bookmark Landing Page challenge from the Frontend Mentor website.",
+    tools: ["React.js", "Tailwind Css", "Vite"],
+    image: BookmarkLandingPage,
+    icon: <FiGithub size={20} />,
+    code: "https://github.com/cesarpizarra/bookmark-landing-page",
+    urL: "https://github.com/cesarpizarra/bookmark-landing-page",
+  },
+  {
+    title: "Bookmark Landing Page",
+    description:
+      "A Bookmark Landing Page challenge from the Frontend Mentor website.",
+    tools: ["React.js", "Tailwind Css", "Vite"],
+    image: BookmarkLandingPage,
+    icon: <FiGithub size={20} />,
+    code: "https://github.com/cesarpizarra/bookmark-landing-page",
+    urL: "https://github.com/cesarpizarra/bookmark-landing-page",
+  },
+  {
+    title: "Bookmark Landing Page",
+    description:
+      "A Bookmark Landing Page challenge from the Frontend Mentor website.",
+    tools: ["React.js", "Tailwind Css", "Vite"],
+    image: BookmarkLandingPage,
+    icon: <FiGithub size={20} />,
+    code: "https://github.com/cesarpizarra/bookmark-landing-page",
+    urL: "https://github.com/cesarpizarra/bookmark-landing-page",
   },
 ];
