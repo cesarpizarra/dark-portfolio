@@ -42,8 +42,9 @@ const Contact = () => {
             >
               I am actively seeking opportunities as a web developer and would
               love to contribute to real projects while expanding my skill set.
-              If you're interested, don't hesitate to reach out. I'm always
-              available to connect and discuss potential collaborations.
+              If you&apos;re interested, don&apos;t hesitate to reach out.
+              I&apos;m always available to connect and discuss potential
+              collaborations.
             </motion.p>
           </div>
 
@@ -51,7 +52,7 @@ const Contact = () => {
             variants={fadeIn("up", "tween", 0.1, 0.6)}
             className="grid gap-5 md:grid-cols-2"
           >
-            <div className="bg-boxDark flex items-center rounded p-4">
+            <div className="flex items-center rounded bg-boxDark p-4">
               <div className="flex items-center gap-5">
                 <FaLocationDot size={25} className="text-secondary" />
                 <div className="flex flex-col">
@@ -65,7 +66,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-boxDark flex items-center rounded p-4">
+            <div className="flex items-center rounded bg-boxDark p-4">
               <div className="flex items-center gap-5">
                 <FiShare2 size={25} className="text-secondary" />
                 <div className="flex flex-col">
@@ -87,7 +88,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-boxDark flex items-center rounded p-4">
+            <div className="flex items-center rounded bg-boxDark p-4">
               <div className="flex items-center gap-5">
                 <MdOutlineEmail size={25} className="text-secondary" />
                 <div className="flex flex-col">
@@ -98,7 +99,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-boxDark flex items-center rounded p-4">
+            <div className="flex items-center rounded bg-boxDark p-4">
               <div className="flex items-center gap-5">
                 <MdAddIcCall size={25} className="text-secondary" />
                 <div className="flex flex-col">
