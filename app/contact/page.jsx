@@ -56,9 +56,7 @@ const Contact = () => {
               <div className="flex items-center gap-5">
                 <FaLocationDot size={25} className="text-secondary" />
                 <div className="flex flex-col">
-                  <h1 className="text-xl font-medium text-textDark">
-                    My Address
-                  </h1>
+                  <h1 className="text-lg text-textDark">My Address</h1>
                   <p className="text-xs font-light">
                     Leones East Tubao, La Union
                   </p>
@@ -70,9 +68,7 @@ const Contact = () => {
               <div className="flex items-center gap-5">
                 <FiShare2 size={25} className="text-secondary" />
                 <div className="flex flex-col">
-                  <span className="text-xl font-medium text-textDark">
-                    Social Profiles
-                  </span>
+                  <span className="text-lg text-textDark">Social Profiles</span>
                   <div className="flex items-center gap-2 pt-px">
                     {socials.map((social, i) => (
                       <a
@@ -92,9 +88,7 @@ const Contact = () => {
               <div className="flex items-center gap-5">
                 <MdOutlineEmail size={25} className="text-secondary" />
                 <div className="flex flex-col">
-                  <h1 className="text-xl font-medium text-textDark">
-                    Email Me
-                  </h1>
+                  <h1 className="text-lg text-textDark">Email Me</h1>
                   <p className="text-xs font-light">cpizarra002@gmail.com</p>
                 </div>
               </div>
@@ -103,7 +97,7 @@ const Contact = () => {
               <div className="flex items-center gap-5">
                 <MdAddIcCall size={25} className="text-secondary" />
                 <div className="flex flex-col">
-                  <h1 className="text-xl font-medium text-textDark">Call Me</h1>
+                  <h1 className="text-lg text-textDark">Call Me</h1>
                   <div className="flex items-center gap-2">
                     <Image
                       src="/ph.png"

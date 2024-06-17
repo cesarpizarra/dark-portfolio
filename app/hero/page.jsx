@@ -23,9 +23,9 @@ const Hero = () => {
 
           <motion.p
             variants={fade(0.8, 0.4)}
-            className="text-xl font-medium text-secondary md:text-2xl"
+            className="text-xl font-medium md:text-2xl"
           >
-            {hero_data.subheading}
+            I'm a <span className="text-secondary">{hero_data.subheading}</span>
           </motion.p>
           <motion.p
             variants={fade(0.8, 0.5)}

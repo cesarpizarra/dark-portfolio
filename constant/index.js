@@ -51,7 +51,7 @@ export const nav_links = [
 
 export const hero_data = {
   name: "Cesar G. Pizarra",
-  subheading: "I'm a Front-End Developer",
+  subheading: "Front-End Developer",
   description:
     "and I'm passionate about creating engaging and user-friendly web experiences.",
 };

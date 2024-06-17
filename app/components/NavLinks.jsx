@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { nav_links } from "@/constant";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Squash as Hamburger } from "hamburger-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -11,10 +11,9 @@ import {
   mobileMenuLink,
   staggerContainer,
 } from "@/utils/motion";
-import { useRouter } from "next/navigation";
-
 const NavLinks = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const router = useRouter();
   const pathName = usePathname();
   useEffect(() => {
@@ -30,11 +29,18 @@ const NavLinks = () => {
     };
   }, [isOpen]);
 
-  const handleLinkClick = (path) => {
-    setIsOpen((prevState) => (prevState = false));
-    router.push(path);
+  const handleClickNavList = (path) => {
+    if (!isAnimating && path !== pathName) {
+      setIsAnimating(true);
+      setIsOpen(false);
+      setTimeout(() => {
+        setIsAnimating(false);
+        router.push(path);
+      }, 1000);
+    } else {
+      setIsOpen(false);
+    }
   };
-
   return (
     <div>
       <div className="absolute right-0 top-3 z-999999 flex lg:hidden">
@@ -89,7 +95,7 @@ const NavLinks = () => {
                   animate="show"
                   transition="transition"
                   exit="exit"
-                  onClick={() => handleLinkClick(link.path)}
+                  onClick={() => handleClickNavList(link.path)}
                   className={`relative block cursor-pointer capitalize text-gray ${
                     link.path === pathName
                       ? "after:absolute after:block after:h-[3px] after:w-full after:origin-left after:scale-x-50 after:bg-secondary after:content-['']"

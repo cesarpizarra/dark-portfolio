@@ -107,7 +107,6 @@ const Projects = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: "false", amount: 0.1 }}
-                whileHover={{ scale: 1.05 }}
                 className="rounded-md bg-boxDark"
               >
                 <div>

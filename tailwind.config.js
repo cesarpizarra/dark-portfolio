@@ -11,7 +11,7 @@ module.exports = {
         dark: "#040404",
         secondary: "#18d26e",
         shadowDark: "rgba(255, 255, 255, 0.08)",
-        boxDark: "rgba(255,255,255,.04)",
+        boxDark: "rgba(255,255,255,.08)",
         shadowDarkHover: "rgba(248, 163, 163, 0.12)",
         gray: "rgba(255, 255, 255, 0.7)",
         gray2: "rgb(55 65 81)",

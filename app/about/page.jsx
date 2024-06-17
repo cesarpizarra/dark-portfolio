@@ -40,11 +40,12 @@ const About = () => {
         >
           <div className="mx-auto max-w-md">
             <Image
-              src="/bg.png"
+              src="/cesar.png"
               width="500"
               height="500"
               alt="My Image"
               style={{ width: "auto", height: "auto" }}
+              className="rounded-md"
             />
           </div>
 
@@ -64,7 +65,14 @@ const About = () => {
                         className="font-semibold text-secondary"
                         size={15}
                       />
-                      <p className="text-md font-medium capitalize">{key}: </p>
+                      <p className="text-md font-medium capitalize">
+                        {key === "birthDay"
+                          ? "Birth Day"
+                          : key === "phoneNumber"
+                            ? "Phone Number"
+                            : key}
+                        :{" "}
+                      </p>
                       <span className="text-sm font-light">{value}</span>
                     </li>
                   ),
