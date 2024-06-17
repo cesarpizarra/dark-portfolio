@@ -1,4 +1,13 @@
-import { FaFacebook } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaCode,
+  FaBrain,
+  FaBook,
+  FaGamepad,
+  FaCamera,
+} from "react-icons/fa";
+import { PiCookingPotDuotone } from "react-icons/pi";
+
 import { FiGithub } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
@@ -20,6 +29,7 @@ import TypeScript from "../public/typescript.png";
 import Bootstrap from "../public/bootstrap.png";
 import BookmarkLandingPage from "../public/bookmark-landing-page.png";
 import { calculateAge, formatDate } from "@/utils";
+import { MdCardTravel, MdMovie } from "react-icons/md";
 
 // Navlinks
 export const nav_links = [
@@ -51,9 +61,9 @@ export const nav_links = [
 
 export const hero_data = {
   name: "Cesar G. Pizarra",
-  subheading: "Front-End Developer",
+  subheading: "Let's build something great together!",
   description:
-    "and I'm passionate about creating engaging and user-friendly web experiences.",
+    "I'm an aspiring frontend web developer passionate about bringing innovative and accessible web designs to life.",
 };
 
 export const socials = [
@@ -103,6 +113,49 @@ export const about = {
     email: "cpizarra002@gmail.com",
   },
 };
+
+export const interests = [
+  {
+    icon: <FaCode size={20} />,
+    title: "Coding",
+    color: "text-green-500",
+  },
+  {
+    icon: <FaBrain size={20} />,
+    title: "Learning",
+    color: "text-pink-500",
+  },
+  {
+    icon: <MdMovie size={20} />,
+    title: "Watching Movies",
+    color: "text-orange-500",
+  },
+  {
+    icon: <FaGamepad size={20} />,
+    title: "Online Games",
+    color: "text-red-500",
+  },
+  {
+    icon: <FaBook size={20} />,
+    title: "Reading",
+    color: "text-yellow-500",
+  },
+  {
+    icon: <FaCamera size={20} />,
+    title: "Photography",
+    color: "text-blue-500",
+  },
+  {
+    icon: <MdCardTravel size={20} />,
+    title: "Traveling",
+    color: "text-purple-500",
+  },
+  {
+    icon: <PiCookingPotDuotone size={20} />,
+    title: "Cooking",
+    color: "text-amber-500",
+  },
+];
 
 export const skills = [
   {

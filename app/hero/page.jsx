@@ -14,6 +14,12 @@ const Hero = () => {
         animate="show"
       >
         <div className="flex min-h-screen flex-col items-center justify-center gap-2 lg:items-start">
+          <motion.p
+            variants={fade(0.8, 0.3)}
+            className="text-sm text-secondary"
+          >
+            Hi there, I am
+          </motion.p>
           <motion.h1
             variants={fade(0.8, 0.3)}
             className="text-4xl font-bold lg:text-6xl"
@@ -25,8 +31,7 @@ const Hero = () => {
             variants={fade(0.8, 0.4)}
             className="text-xl font-medium md:text-2xl"
           >
-            I&apos;m a{" "}
-            <span className="text-secondary">{hero_data.subheading}</span>
+            {hero_data.subheading}
           </motion.p>
           <motion.p
             variants={fade(0.8, 0.5)}

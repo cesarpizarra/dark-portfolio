@@ -1,5 +1,5 @@
 "use client";
-import { about } from "@/constant";
+import { about, interests } from "@/constant";
 import Wrapper from "../components/Wrapper";
 import Image from "next/image";
 import { TbMathGreater } from "react-icons/tb";
@@ -88,6 +88,36 @@ const About = () => {
             </div>
           </div>
         </motion.div>
+
+        <div>
+          <motion.h1
+            variants={fadeIn("up", "tween", 0.2, 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: "false", amount: 0.1 }}
+            className="text-md flex items-center gap-2 font-medium uppercase text-textDark"
+          >
+            Interests
+            <span className="h-px w-24 bg-secondary"></span>
+          </motion.h1>
+
+          <div className="grid gap-5 pt-5 sm:grid-cols-2 md:grid-cols-4">
+            {interests.map((interest, i) => (
+              <motion.div
+                key={i}
+                variants={fadeIn("up", "tween", 0.2, 0.4)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: "false", amount: 0.1 }}
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-4 rounded-md bg-boxDark p-4 text-xs"
+              >
+                <span>{interest.icon}</span>
+                <p>{interest.title}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </motion.section>
     </Wrapper>
   );
