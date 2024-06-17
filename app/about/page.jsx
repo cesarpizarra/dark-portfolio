@@ -67,7 +67,7 @@ const About = () => {
                       />
                       <p className="text-md font-medium capitalize">
                         {key === "birthDay"
-                          ? "Birth Day"
+                          ? "Birth Date"
                           : key === "phoneNumber"
                             ? "Phone Number"
                             : key}

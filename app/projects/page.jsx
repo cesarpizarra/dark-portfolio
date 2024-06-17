@@ -18,6 +18,9 @@ const Projects = () => {
       >
         <motion.h1
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-3xl font-bold uppercase text-textDark"
         >
           Projects{" "}
@@ -26,6 +29,9 @@ const Projects = () => {
 
         <motion.p
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-sm font-light"
         >
           Here are some of the projects that I built.
@@ -34,6 +40,9 @@ const Projects = () => {
         <div className="py-12">
           <motion.h1
             variants={fadeIn("up", "tween", 0.1, 0.6)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: "false", amount: 0.4 }}
             className="mb-2 text-2xl font-semibold text-secondary"
           >
             Featured Projects
@@ -94,8 +103,11 @@ const Projects = () => {
 
         <div className="py-12">
           <motion.h1
-            variants={fadeIn("up", "tween", 0.1, 0.6)}
-            className="mb-2 text-2xl font-semibold text-secondary"
+            variants={fadeIn("up", "tween", 0.2, 0.4)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: "false", amount: 0.4 }}
+            className="text-2xl font-semibold text-secondary"
           >
             Other Projects
           </motion.h1>
