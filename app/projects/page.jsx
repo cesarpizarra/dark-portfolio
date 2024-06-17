@@ -47,7 +47,7 @@ const Projects = () => {
             className="grid w-full gap-5 rounded md:grid-cols-2"
           >
             <div className="relative p-3">
-              <div className="bg-boxDark absolute inset-0 z-999 rounded"></div>
+              <div className="absolute inset-0 z-999 rounded bg-boxDark"></div>
               <div className="relative left-[-2rem]">
                 <Image
                   src="/bookmark-landing-page.png"
@@ -72,7 +72,7 @@ const Projects = () => {
                 {["React", "Tailwind CSS", "Vite"].map((value, i) => (
                   <div
                     key={i}
-                    className="bg-boxDark rounded-full px-4 py-2 text-xs"
+                    className="rounded-full bg-shadowDark px-4 py-2 text-xs"
                   >
                     {value}
                   </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                   <FiExternalLink />
                   take a look
                 </button>
-                <div className="bg-boxDark cursor-pointer rounded-full p-4 duration-300 hover:translate-y-[-5px]">
+                <div className="cursor-pointer rounded-full bg-shadowDark p-4 duration-300 hover:translate-y-[-5px]">
                   <FiGithub />
                 </div>{" "}
               </div>
@@ -108,7 +108,7 @@ const Projects = () => {
                 whileInView="show"
                 viewport={{ once: "false", amount: 0.1 }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-boxDark rounded-md"
+                className="rounded-md bg-boxDark"
               >
                 <div>
                   <Image
@@ -129,7 +129,7 @@ const Projects = () => {
                     {proj.tools.map((tool, i) => (
                       <div
                         key={i}
-                        className="bg-boxDark rounded-full px-4 py-2 text-xs"
+                        className="rounded-full bg-shadowDark px-4 py-2 text-xs"
                       >
                         {tool}
                       </div>
@@ -139,13 +139,13 @@ const Projects = () => {
                   <div className="flex justify-end gap-3">
                     <a
                       href={proj.code}
-                      className="bg-boxDark cursor-pointer rounded-full p-4 duration-300 hover:translate-y-[-5px]"
+                      className="cursor-pointer rounded-full bg-shadowDark p-4 duration-300 hover:translate-y-[-5px]"
                     >
                       <FiGithub />{" "}
                     </a>
                     <a
                       href={proj.urL}
-                      className="bg-boxDark cursor-pointer rounded-full p-4 duration-300 hover:translate-y-[-5px]"
+                      className="cursor-pointer rounded-full bg-shadowDark p-4 duration-300 hover:translate-y-[-5px]"
                     >
                       <FiExternalLink />
                     </a>

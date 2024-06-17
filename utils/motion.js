@@ -8,6 +8,61 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
   },
 });
 
+export const mobileMenu = {
+  hidden: {
+    height: 0,
+    opacity: 0.4,
+  },
+  show: {
+    height: "100vh",
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+    },
+  },
+  transition: {
+    duration: 0.6,
+    when: "beforeChildren",
+  },
+  exit: {
+    opacity: 0,
+    height: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.3,
+      delay: 1.4,
+    },
+  },
+};
+
+export const mobileMenuLink = (showDelay, delay, exitDelay) => ({
+  hidden: {
+    y: 80,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.3,
+      delay: showDelay,
+    },
+  },
+  transition: {
+    delay: delay,
+  },
+  exit: {
+    opacity: 0,
+    y: 80,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.3,
+      delay: exitDelay,
+    },
+  },
+});
+
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -59,58 +114,6 @@ export const socialVariants = {
     opacity: 1,
     transition: {
       type: "tween",
-    },
-  },
-};
-
-export const navContainer = {
-  visible: {
-    //x: 0,
-    opacity: 1,
-    transition: {
-      x: { velocity: 100 },
-      duration: 0.3,
-    },
-  },
-  hidden: {
-    //x: -250,
-    opacity: 0,
-    transition: {
-      x: { velocity: 100 },
-      duration: 0.3,
-    },
-  },
-};
-export const navList = {
-  visible: {
-    opacity: 1,
-    transition: {
-      delayChildren: 0.2,
-      staggerChildren: 0.07,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    transition: {
-      staggerChildren: 0.05,
-      staggerDirection: -1,
-    },
-  },
-};
-
-export const navItem = {
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      y: { stiffness: 1000, velocity: -100 },
-    },
-  },
-  hidden: {
-    y: 50,
-    opacity: 0,
-    transition: {
-      y: { stiffness: 1000, velocity: -100 },
     },
   },
 };

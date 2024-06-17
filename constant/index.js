@@ -15,7 +15,7 @@ import Git from "../public/git.png";
 import VsCode from "../public/vs code.png";
 import Figma from "../public/figma.png";
 import Express from "../public/express.png";
-import Next from "../public/next.png";
+import Next from "../public/nextjs.png";
 import TypeScript from "../public/typescript.png";
 import Bootstrap from "../public/bootstrap.png";
 import BookmarkLandingPage from "../public/bookmark-landing-page.png";
