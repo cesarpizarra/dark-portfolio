@@ -10,7 +10,13 @@ const Wrapper = ({ children }) => {
         <div className="flex items-center justify-between">
           <Link href="/">
             <div className="cursor-pointer">
-              <Image src="/logo.png" alt="logo" width="40" height="40" />
+              <Image
+                src="/my-logo.png"
+                alt="logo"
+                width="60"
+                height="60"
+                style={{ width: "auto", height: "auto" }}
+              />
             </div>
           </Link>
           <NavLinks />
