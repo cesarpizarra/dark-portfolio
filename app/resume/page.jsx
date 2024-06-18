@@ -15,6 +15,9 @@ const Resume = () => {
       >
         <motion.h1
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-3xl font-bold uppercase text-textDark"
         >
           Resume{" "}
@@ -23,6 +26,9 @@ const Resume = () => {
 
         <motion.p
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-sm font-light"
         >
           Check my resume.

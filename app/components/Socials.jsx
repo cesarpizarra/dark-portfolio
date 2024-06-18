@@ -15,7 +15,7 @@ const Socials = () => {
           variants={socialVariants}
           href={social.url}
           key={i}
-          className={`cursor-pointer rounded-full bg-shadowDark p-2 duration-300 hover:translate-y-[-5px] hover:bg-secondary ${(social.name === "facebook" || social.name === "linkedin") && "text-dark hover:text-white sm:text-white sm:hover:text-white"}`}
+          className={`l cursor-pointer rounded-full bg-[#222] p-2 duration-300 hover:translate-y-[-5px] hover:bg-secondary lg:bg-shadowDark`}
         >
           {social.icon}
         </motion.a>

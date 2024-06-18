@@ -21,6 +21,9 @@ const Contact = () => {
       >
         <motion.h1
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-3xl font-bold uppercase text-textDark"
         >
           Contact{" "}
@@ -29,9 +32,12 @@ const Contact = () => {
 
         <motion.p
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-sm font-light"
         >
-          Contact me.
+          Get in touch with me.
         </motion.p>
 
         <div className="py-8">

@@ -17,6 +17,9 @@ const Skills = () => {
       >
         <motion.h1
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-3xl font-bold uppercase text-textDark"
         >
           Skills{" "}
@@ -25,6 +28,9 @@ const Skills = () => {
 
         <motion.p
           variants={fadeIn("up", "tween", 0.1, 0.6)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: "false", amount: 0.4 }}
           className="text-sm font-light"
         >
           These are the technologies and tools I use.
@@ -39,7 +45,7 @@ const Skills = () => {
               whileInView="show"
               viewport={{ once: "false", amount: 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="bg-boxDark flex items-center gap-4 rounded-md p-4"
+              className="flex items-center gap-4 rounded-md bg-boxDark p-4"
             >
               <Image
                 src={skill.logo}

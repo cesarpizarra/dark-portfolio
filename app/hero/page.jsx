@@ -29,7 +29,7 @@ const Hero = () => {
 
           <motion.p
             variants={fade(0.8, 0.4)}
-            className="text-md md:text-xl font-medium md:text-2xl"
+            className="text-md font-medium md:text-xl lg:text-2xl"
           >
             {hero_data.subheading}
           </motion.p>

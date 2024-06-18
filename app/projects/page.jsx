@@ -107,7 +107,7 @@ const Projects = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: "false", amount: 0.4 }}
-            className="text-2xl font-semibold text-secondary"
+            className="mb-2 text-2xl font-semibold text-secondary"
           >
             Other Projects
           </motion.h1>
