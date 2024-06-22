@@ -56,7 +56,7 @@ const Projects = () => {
             className="grid w-full gap-5 rounded md:grid-cols-2"
           >
             <div className="relative p-3">
-              <div className="absolute inset-0 z-999 rounded bg-boxDark"></div>
+              <div className="absolute inset-0 rounded border-2 border-gray2"></div>
               <div className="relative left-[-2rem]">
                 <Image
                   src="/bookmark-landing-page.png"
