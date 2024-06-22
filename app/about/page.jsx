@@ -71,7 +71,7 @@ const About = () => {
                         className="font-semibold text-secondary"
                         size={15}
                       />
-                      <p className="text-md font-medium capitalize">
+                      <p className="text-sm font-medium capitalize">
                         {key === "birthDay"
                           ? "Birth Date"
                           : key === "phoneNumber"
@@ -79,7 +79,7 @@ const About = () => {
                             : key}
                         :{" "}
                       </p>
-                      <span className="text-sm font-light">{value}</span>
+                      <span className="text-xs font-light">{value}</span>
                     </li>
                   ),
                 )}

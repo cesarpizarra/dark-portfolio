@@ -105,7 +105,6 @@ export const about = {
 
   personal_info: {
     birthDay: formatDate("2001-03-22"),
-    phoneNumber: "09071656632",
     city: "San Fernando, La Union",
     portfolio: "https://cpizarra.vercel.app",
     age: calculateAge("2001-03-22"),

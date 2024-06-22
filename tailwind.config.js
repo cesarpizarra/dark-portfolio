@@ -16,6 +16,7 @@ module.exports = {
         gray: "rgba(255, 255, 255, 0.7)",
         gray2: "rgb(55 65 81)",
         textDark: "#aaaaaa",
+        wrapperBackground:"rgba(0, 0, 0, 0.9)"
       },
       zIndex: {
         999999: "999999",
